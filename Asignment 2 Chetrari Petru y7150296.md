@@ -56,7 +56,86 @@ $$
 \exists n = \frac{{6\varepsilon-1}}{4\varepsilon}+1\ :\quad n> \frac{{6\varepsilon-1}}{4\varepsilon}, \forall \varepsilon >0
 $$
 
+# 2.
 
+## a)
+$$
+(1+2+3+4+\dots+n)^{1/n}
+$$
+$$
+\lim_{ n \to \infty }\left( \frac{n(n+1)}{2} \right) ^ \frac{1}{n}
+$$
+$$
+\lim_{ n \to \infty } e ^ { \ln\left( \tfrac{n(n+1)}{2} \right)^ \frac{1}{n}  } 
+$$
+$$
+\lim_{ n \to \infty } e^  \left( \tfrac{1}{n} \cdot \ln{\tfrac{n(n+1)}{2}} \right) 
+$$
+
+we take the exponent separately
+$$
+\lim_{ n \to \infty } \frac{{\ln \frac{{n(n+1)}}{2}}}{n}
+$$
+apply stolz cesaro
+$$
+\lim_{ n \to \infty } \frac{{\ln \frac{{(n+1)(n+2)}}{2} - \ln \frac{{n(n+1)}}{2}}}{n+1-n}
+$$
+
+$$
+\lim_{ n \to \infty }    \frac{\ln\left({\frac{{(n+1)(n+2)}}{2}\cdot \frac{2}{n(n+1)}} \right)}{1}
+$$
+$$
+\lim_{ n \to \infty } \ln \frac{{n+2}}{n}
+$$
+$$
+\lim_{ n \to \infty } \ln \left( 1 + \frac{2}{n} \right) = 0
+$$
+coming back to the main limit
+$$
+\lim_{ n \to \infty } x_{n} = \lim_{ n \to \infty } e^0 = 1
+$$
+
+
+## b)
+
+$$
+x_{n} = \left( \frac{\ln(n+1)}{\ln n} \right) ^n
+$$
+calculating limit
+
+$$
+\lim_{ n \to \infty } \left( 1+\frac{{\ln(n+1)}}{\ln n} -1 \right)^n
+$$
+$$
+\lim_{ n \to \infty } \left( 1+ \frac{{\ln(n+1)- \ln n}}{\ln n} \right)^n
+$$
+$$
+\lim_{ n \to \infty } \left(\left( 1+ {\frac{\ln \frac{n+1}{n}}{\ln n}} \right)^ \tfrac{{\ln n}}{\ln \tfrac{n+1}{n}}  \right)^ \tfrac{{n \cdot \ln {\tfrac{n+1}{n}}}}{\ln n}
+$$
+$$
+e^{\lim_{ n \to \infty } \tfrac{n \cdot \ln \tfrac{n+1}{n}}{\ln n}}
+$$
+$$
+e^{\lim_{ n \to \infty } \tfrac{\left(  \ln \tfrac{n+1}{n}\right)^n }{\ln n} }
+$$
+$$
+e^0 = 1
+$$
+
+## c)
+$$
+x_{n} = \frac{n^n}{1^1+2^2+3^3+..+n^n}
+$$
+$$
+\lim_{ n \to \infty } \frac{e^{\ln{n^n}}}{e^{\ln{n^n}}\left( \frac{1^1+2^2+3^3+\dots}{e^{\ln n^n}}+1 \right) }
+
+$$
+$$
+\lim_{ n \to \infty } \frac{1^1+2^2+3^3+\dots}{e^{n \ln n}} +1
+$$
+$$
+\lim_{ n \to \infty } x_{n} = 1
+$$
 # 4.
 $$
 x_{n} = 1+ \frac{1}{2} + \dots+ \frac{1}{n} - \ln(n)

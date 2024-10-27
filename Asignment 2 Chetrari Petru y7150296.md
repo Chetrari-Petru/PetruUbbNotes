@@ -136,6 +136,12 @@ $$
 $$
 \lim_{ n \to \infty } x_{n} = 1
 $$
+
+
+# 3.
+i'm going to have this handwritten because i'm running out of time, aand now i have the means to do so (i'm doing the hw at home)
+![[SABHDSABSDA|800x300]]
+
 # 4.
 $$
 x_{n} = 1+ \frac{1}{2} + \dots+ \frac{1}{n} - \ln(n)
